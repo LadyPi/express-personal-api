@@ -6,7 +6,7 @@ var mongoose = require('mongoose'),
 //profile schema creation format
 var DestinationSchema = new Schema({
   location: String,
-  country: String,
+  id: Number,
 });
 
 //profile schema model creation

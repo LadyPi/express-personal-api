@@ -3,30 +3,31 @@
 
 var db = require('./models');
 
-var destinationWishList = [
-				{
-				 destination: 'Amsterdam',
-	             country: 'The Netherlands'
-				},
-				{
-				 destination: 'Venice',
-	             country: 'Italy'
-				},
-				{
-				 destination: 'Madrid',
-	             country: 'Spain'
-				}
+//vaca wish list
+var destination = [
+        {
+         location: 'Amsterdam',
+         id: 9
+        },
+        {
+         location: 'Venice',
+         id: 12
+        },
+        {
+         location: 'Madrid',
+         id: 3
+        }
 ];
 
 
-db.Destination.create(destinationWishList, function(err, destinations) {
+db.Destination.create(destinations, function(err, destinations) {
   if (err){
     return console.log("Error:", err);
   }
   });
 
-  console.log("Created new destination", destination._id);
-  process.exit(); // we're all done! Exit the program.
+  // console.log("Created new destination", destination._id);
+  // process.exit(); // we're all done! Exit the program.
 
 
 
